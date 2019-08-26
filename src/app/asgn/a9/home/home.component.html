@@ -1,0 +1,22 @@
+<p>home works!</p>
+
+<br>
+
+<ul>
+    <li>
+        <a routerLink='book' routerLinkActive="router-link-active">goto books</a>
+    </li>
+    <li>
+        <a routerLink='parent' routerLinkActive='router-link-active'>goto parent</a>
+    </li>
+    <li>
+        <a [routerLink]="['child']" routerLinkActive='router-link-active'> goto child</a>
+    </li>
+</ul>
+
+<ul>
+    <li> <button (click)="gotoBook()">Book</button></li>
+    <li><button (click)="gotoParent()">Parent</button></li>
+    <li><button (click)="gotoTech()">Technology</button></li>
+    <li><button (click)="gotoChild()">Child</button></li>
+</ul>

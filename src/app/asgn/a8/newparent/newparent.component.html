@@ -1,0 +1,10 @@
+<p>newparent works!</p>
+
+data from child : {{ChildData}}
+
+<button type="submit" (click)="sendToChild()">sent to child</button>
+
+<app-newchild [parentData]='mymsg' (myobjnew)="ChildData=$event"></app-newchild>
+<br>
+<input type="text" name="" id="" [(ngModel)]="abc">
+{{abc.toUpperCase}}

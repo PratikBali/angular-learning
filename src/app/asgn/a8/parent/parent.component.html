@@ -1,0 +1,15 @@
+<p>parent works!</p>
+
+<ul>
+    <li>
+        <a routerLink='' routerLinkActive="router-link-active">goto Home</a>
+    </li>
+</ul>
+
+
+data from child : {{childData}}
+<br>
+<button type="submit" (click)="sendToChild()">sent to child</button>
+<hr>
+
+<app-child [parentData]='mymsg' (myobj)="childData= $event"></app-child>
